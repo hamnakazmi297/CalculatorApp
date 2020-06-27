@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="text-dark display-3 m-4 ">Calculator</h1>
+    <div class="container">
+        <div class="col-sm-6 main">
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="res" value="0">
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('7')">7</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('8')">8</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('9')">9</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('/')">&#247</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="">x<sup>2</sup></button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="document.getElementById('res').value = res.slice(0,-1);"><i class="fas fa-backspace"></i></button>
+                </div>
+
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('4')">4</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('5')">5</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('6')">6</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('*')">x</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="sqRoot()"> &#8730;</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="document.getElementById('res').value = 0;">C</button>
+                </div>
+
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('1')">1</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('2')">2</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('3')">3</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('-')">-</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="">1/x</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="expo()">e</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="">+/-</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('0')">0</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('.')">.</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('+')">+</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="getNum('%')">%</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn" onclick="evalResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
